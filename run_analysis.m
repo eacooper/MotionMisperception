@@ -446,9 +446,9 @@ for s = 1:length(filenames) % for each subject
     fprintf('\n')
     fprintf('\n')
     disp(['subj ' num2str(s) ' STATS: Cardinals']);
-    disp(['lowC vs 0: t(' num2str(stats_lowC.df) ') = ' num2str(stats_lowC.tstat,3) '; p = ' num2str(p_lowC,4) '; D = ' num2str(d_lowC.Effect,2)])
-    disp(['highC vs 0: t(' num2str(stats_highC.df) ') = ' num2str(stats_highC.tstat,3) '; p = ' num2str(p_highC,4) '; D = ' num2str(d_highC.Effect,2)])
-    disp(['highC vs lowC: t(' num2str(stats_highVlow.df) ') = ' num2str(stats_highVlow.tstat,3) '; p = ' num2str(p_highVlow,4) '; D = ' num2str(d_highVlow.Effect,2)])
+    disp(['lowC vs 0: t(' num2str(stats_lowC.df) ') = ' num2str(stats_lowC.tstat,3) '; p = ' num2str(p_lowC,4) '; D = ' num2str(abs(d_lowC.Effect),2)])
+    disp(['highC vs 0: t(' num2str(stats_highC.df) ') = ' num2str(stats_highC.tstat,3) '; p = ' num2str(p_highC,4) '; D = ' num2str(abs(d_highC.Effect),2)])
+    disp(['highC vs lowC: t(' num2str(stats_highVlow.df) ') = ' num2str(stats_highVlow.tstat,3) '; p = ' num2str(p_highVlow,4) '; D = ' num2str(abs(d_highVlow.Effect),2)])
 
     % diagonals
     figure(figDiag)
@@ -487,9 +487,9 @@ for s = 1:length(filenames) % for each subject
 
     fprintf('\n')
     disp(['subj ' num2str(s) ' STATS: Diagonals']);
-    disp(['lowC vs 0: t(' num2str(stats_lowC.df) ') = ' num2str(stats_lowC.tstat,3) '; p = ' num2str(p_lowC,4) '; D = ' num2str(d_lowC.Effect,2)])
-    disp(['highC vs 0: t(' num2str(stats_highC.df) ') = ' num2str(stats_highC.tstat,3) '; p = ' num2str(p_highC,4) '; D = ' num2str(d_highC.Effect,2)])
-    disp(['highC vs lowC: t(' num2str(stats_highVlow.df) ') = ' num2str(stats_highVlow.tstat,3) '; p = ' num2str(p_highVlow,4) '; D = ' num2str(d_highVlow.Effect,2)])
+    disp(['lowC vs 0: t(' num2str(stats_lowC.df) ') = ' num2str(stats_lowC.tstat,3) '; p = ' num2str(p_lowC,4) '; D = ' num2str(abs(d_lowC.Effect),2)])
+    disp(['highC vs 0: t(' num2str(stats_highC.df) ') = ' num2str(stats_highC.tstat,3) '; p = ' num2str(p_highC,4) '; D = ' num2str(abs(d_highC.Effect),2)])
+    disp(['highC vs lowC: t(' num2str(stats_highVlow.df) ') = ' num2str(stats_highVlow.tstat,3) '; p = ' num2str(p_highVlow,4) '; D = ' num2str(abs(d_highVlow.Effect),2)])
 
 end
 
